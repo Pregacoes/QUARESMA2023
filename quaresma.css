@@ -64,11 +64,11 @@ section {
 
 
 @media screen and (max-width: 580px) {
-    /* .videos {
+     .videos {
        display: flex;
        flex-wrap: wrap;
        flex-direction: row;
-    } */
+    } 
     iframe {
         width: auto;
         height: 100%;
