@@ -8,14 +8,17 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
     width: 97.3vw;
     text-align: center;
-    padding: 80px 10px;
+    padding: 100px 10px;
     background: orangered;
     color: white;
+    margin-bottom: -70px;
+    /* border: #000 solid 1px; */
 }
 main{
     display: flex;
@@ -69,19 +72,24 @@ section {
 
 
 @media screen and (max-width: 580px) {
-    /* .videos {
-       display: flex;
-       flex-wrap: wrap;
-       flex-direction: row;
+
+    /* body {
+        font-size: 13px;
     } */
+    
     iframe {
         width: auto;
         height: 100%;
     }
+
+    .videos {
+        margin: 25px 0px;
+    }
+
     .videos > .span {
         /* position: absolute;
         top: 350px; */
-        font-size: 20px;
+        font-size: 16px;
         margin-top: 8px;
         padding-left: 10px;
     }
