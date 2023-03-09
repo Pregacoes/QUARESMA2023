@@ -3,7 +3,11 @@
 }
 
 body {
-    background: orangered;
+    background-image: url(cruz-crucifixo-parede-em-madeira-26-5-cm.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -12,14 +16,20 @@ body {
 }
 
 header {
-    width: 97.3vw;
+    width: 94.3vw;
     text-align: center;
     padding: 100px 10px;
-    background: orangered;
-    color: white;
+    background: transparent;
+    color: #000;
     margin-bottom: -70px;
-    /* border: #000 solid 1px; */
+    text-shadow: 1px 1px 1px rgb(255, 255, 255);
+    letter-spacing: 3px;
 }
+
+.title {
+    color:orangered;
+}
+
 main{
     display: flex;
     justify-content: center;
@@ -70,6 +80,17 @@ section {
     border-radius: 2px;
 }
 
+/* .alignTxt {
+  background:yellow;
+  margin-top: 200px !important;
+} */
+
+footer { 
+    width: 99vw;
+    height: 20px;
+    background: transparent;
+}
+
 
 @media screen and (max-width: 580px) {
 
@@ -97,5 +118,11 @@ section {
     .videos > .span > .alignTxt {
         
     }
+
+    /* footer { 
+        width: 100vw;
+        height: 20px;
+        background: #000;
+    } */
 }
 
