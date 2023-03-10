@@ -35,9 +35,9 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     padding: 50px 0px;
-    /* border: #000 solid 1px; */
+    border-left: #00000044 solid 1px;
+    border-right: #00000045 solid 1px;
     width: 90%;
-
 }
 
 section {
@@ -80,6 +80,7 @@ section {
     /* text-shadow: 1px 1px 1px rgb(255, 255, 255); */
     padding: 10px 8px;
     border-radius: 2px;
+    letter-spacing: 1px;
 }
 
 /* .alignTxt {
