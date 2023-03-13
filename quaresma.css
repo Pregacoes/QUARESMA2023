@@ -38,6 +38,8 @@ main{
     border-left: #00000044 solid 1px;
     border-right: #00000045 solid 1px;
     width: 90%;
+    background: #00000028;
+    box-shadow: #00000053 1px -1px 1px;
 }
 
 section {
@@ -102,8 +104,8 @@ footer {
     } */
     
     iframe {
-        width: auto;
-        height: 100%;
+        width: 260px !important;
+        height: 315px;
     }
 
     .videos {
