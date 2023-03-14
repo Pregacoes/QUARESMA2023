@@ -104,8 +104,8 @@ footer {
     } */
     
     iframe {
-        width: 260px !important;
-        height: 315px;
+        width: 100%;
+        height: auto;
     }
 
     .videos {
