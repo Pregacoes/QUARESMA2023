@@ -1,13 +1,20 @@
 * {
     margin: 0;
 }
-
-body {
-    background-image: url(cruz-crucifixo-parede-em-madeira-26-5-cm.jpg);
-    background-repeat: no-repeat;
+html {
+    background-image: url(headerQuaresma.jpg);
     background-position: center;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body {
+    
+    /* background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: contain; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -16,42 +23,51 @@ body {
 }
 
 header {
+    margin-top: 40px;
+    margin-bottom: 50px;
     width: 94.3vw;
     text-align: center;
-    padding: 100px 10px;
+    padding: 80px 10px;
     background: transparent;
     color: #000;
     margin-bottom: -70px;
     text-shadow: 1px 1px 1px rgb(255, 255, 255);
     letter-spacing: 3px;
+    background: rgba(255, 255, 255, 0.201);
+    border-radius: 8px;
+    box-shadow: 2px -2px 2px #00000052;
 }
 
 .title {
-    color:orangered;
+    color:blueviolet;
+    text-shadow: #000000 1px 1px 1px;
 }
 
 main{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     padding: 50px 0px;
-    border-left: #00000044 solid 1px;
-    border-right: #00000045 solid 1px;
-    width: 90%;
-    background: #00000028;
-    box-shadow: #00000053 1px -1px 1px;
+    /* border-left: #00000044 solid 1px;
+    border-right: #00000045 solid 1px; */
+    width: 93%;
+    /* background: #00000028;
+    box-shadow: #00000053 1px -1px 1px; */
 }
 
 section {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    /* background: blueviolet; */
+    margin-top: 50px;
+    width: 50%;
 }
 
 .filter {
     filter: grayscale(100);
-    /* filter: blur(20px); */
+    filter: blur(20px);
     opacity: 0.5;
     cursor: none;
 }
@@ -61,34 +77,28 @@ section {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.left {
-    margin-right: 5px;
-}
-.right {
-    margin-left: 5px;
-}
-
 .videos > .span {
-    /* font-size: 20px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     font-weight: bold;
-    color: orangered;
-    margin-top: 8px;
+    color: blueviolet;
+    text-shadow: 1px 1px 1px #000;
     padding-left: 10px;
     background: transparent;
-    /* text-shadow: 1px 1px 1px rgb(255, 255, 255); */
-    padding: 10px 8px;
     border-radius: 2px;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    background: rgba(255, 255, 255, 0.407);
+    width: 550px;
+    height: 60px;
+    box-shadow: #00000028 2px -2px 2px;
+    margin-bottom: 4px;
 }
 
-/* .alignTxt {
-  background:yellow;
-  margin-top: 200px !important;
-} */
 
 footer { 
     width: 99vw;
@@ -96,32 +106,57 @@ footer {
     background: transparent;
 }
 
+@media screen and (max-width: 1250px) {
+
+    /* iframe {
+        width: 260px;
+        height: auto;
+    } */
+
+    section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        width: auto;
+    }
+}
+
 
 @media screen and (max-width: 580px) {
 
-    /* body {
-        font-size: 13px;
-    } */
-    
-    iframe {
+    html {
+        background-image: url(headerQuaresma.jpg);
+        background-position: right;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    section {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 50px;
         width: auto;
-        height: auto;
+    }
+
+    iframe {
+        width: 400px;
+        height: 220px;
     }
 
     .videos {
-        margin: 25px 0px;
+        margin: 1px 0px;
     }
 
     .videos > .span {
-        /* position: absolute;
-        top: 350px; */
-        font-size: 16px;
+        font-size: 15px;
         margin-top: 8px;
         padding-left: 10px;
-    }
-
-    .videos > .span > .alignTxt {
-        
+        width: auto;
     }
 
     /* footer { 
@@ -131,3 +166,10 @@ footer {
     } */
 }
 
+@media screen and (max-width: 420px) {
+
+    iframe {
+        width: 367px;
+        height: 170px;
+    }
+}
