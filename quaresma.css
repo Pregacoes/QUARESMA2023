@@ -126,9 +126,10 @@ footer {
 
 @media screen and (max-width: 580px) {
 
+
     html {
         background-image: url(headerQuaresma.jpg);
-        background-position: right;
+        background-position: center;
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
@@ -144,7 +145,7 @@ footer {
     }
 
     iframe {
-        width: 400px;
+        width: 430px;
         height: 220px;
     }
 
@@ -167,6 +168,12 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+    html {
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 
     iframe {
         width: 367px;
