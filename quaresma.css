@@ -114,7 +114,11 @@ hr.header {
 
 .title {
     color:rgb(247, 247, 247);
-    text-shadow: #000000 2px 2px 2px;
+    text-shadow: #000000 2px 1px 2px;
+}
+
+.h2Main {
+    text-shadow: #f5f4f4 1px 1px 1px;
 }
 
 main{
